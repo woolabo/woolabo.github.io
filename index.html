@@ -3,19 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>woolabo</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 760px; margin: 48px auto; padding: 0 20px; color: #171717; }
-    h1 { font-size: 36px; line-height: 1.15; margin-bottom: 8px; }
-    a { color: #0b57d0; }
-    .muted { color: #666; }
-  </style>
+  <meta name="theme-color" content="#f2f2f2">
+  <meta name="description" content="e1 captures words from screens and the world, then turns them into bookmarks worth returning to.">
+  <title>e1 - Keep what catches you</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site-config.js" defer></script>
 </head>
-<body>
-  <h1>woolabo</h1>
-  <p class="muted">Capture Words Worth Keeping.</p>
-  <p>woolabo is an iPhone app for capturing words and moments you want to keep, highlighting what matters, and saving it as a clean bookmark.</p>
-  <p><a href="/privacy-policy/">Privacy Policy</a></p>
-  <p><a href="/support/">Support</a></p>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand-mark" href="/" aria-label="e1 home">e<sup>1</sup></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/privacy-policy/">Privacy</a>
+      <a href="/support/">Support</a>
+      <a href="https://github.com/woolabo" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy" aria-labelledby="hero-title">
+      <h1 id="hero-title">Keep what<br>catches you.</h1>
+      <p class="hero-description">Capture a line from a screen or the world.<br>Turn it into a bookmark worth returning to.</p>
+      <p class="hero-note">On-device OCR. Local-first bookmarks.</p>
+    </section>
+
+    <section class="device-stage" aria-label="e1 app preview">
+      <div class="iphone" aria-hidden="true">
+        <span class="iphone-button iphone-button-silent"></span>
+        <span class="iphone-button iphone-button-volume-up"></span>
+        <span class="iphone-button iphone-button-volume-down"></span>
+        <span class="iphone-button iphone-button-power"></span>
+        <div class="iphone-screen">
+          <img id="app-screen" src="/assets/app-home.png" alt="" draggable="false">
+          <span class="dynamic-island"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="action-grid" aria-label="Quick links">
+    <a class="action action-shortcut" id="shortcut-link" href="#" aria-disabled="true">
+      <span>Get the Shortcut</span>
+      <span class="action-arrow" aria-hidden="true">&nearr;</span>
+    </a>
+    <a class="action action-privacy" href="/privacy-policy/">
+      <span>Privacy</span>
+      <span class="action-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="action action-support" href="/support/">
+      <span>Support</span>
+      <span class="action-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+    <a class="action action-about" href="https://github.com/woolabo" rel="noreferrer">
+      <span>About e<sup>1</sup></span>
+      <span class="action-arrow" aria-hidden="true">&rarr;</span>
+    </a>
+  </nav>
 </body>
 </html>
