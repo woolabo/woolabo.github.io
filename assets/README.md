@@ -1,4 +1,4 @@
-# e1 App Screen
+# e¹ App Screen
 
 The iPhone frame is built with HTML and CSS. The image inside it is loaded separately.
 
