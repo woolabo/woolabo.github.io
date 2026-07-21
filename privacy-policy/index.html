@@ -9,155 +9,157 @@
   <link rel="icon" type="image/png" sizes="120x120" href="/assets/app-icon-current.png">
   <link rel="apple-touch-icon" href="/assets/app-icon-current.png">
   <link rel="preload" href="/assets/fonts/JuliusSansOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=20260722-1">
+  <link rel="stylesheet" href="/styles.css?v=20260722-2">
+  <script src="/i18n.js" defer></script>
 </head>
 <body class="legal-page">
   <header class="site-header">
     <a class="brand-mark" href="/" aria-label="e¹ home">
       <span class="brand-symbol" aria-hidden="true"></span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/shortcuts/">Shortcuts</a>
-      <a href="/privacy-policy/" aria-current="page">Privacy</a>
-      <a href="/support/">Support</a>
+    <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="nav.label">
+      <a href="/shortcuts/" data-i18n="nav.shortcuts">Shortcuts</a>
+      <a href="/privacy-policy/" aria-current="page" data-i18n="nav.privacy">Privacy</a>
+      <a href="/support/" data-i18n="nav.support">Support</a>
       <a class="nav-external" href="https://github.com/woolabo" rel="noreferrer">GitHub</a>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="切换至中文">ZH</button>
     </nav>
   </header>
 
   <main class="legal-main">
     <header class="document-hero">
-      <h1>Privacy<br>Policy.</h1>
+      <h1 data-i18n-html="privacy.title">Privacy<br>Policy.</h1>
       <div class="document-intro">
-        <p>e¹ is designed to help you capture words and moments you want to keep, highlight the part that matters, and save it as a bookmark on your iPhone.</p>
-        <span>Last updated: July 15, 2026</span>
+        <p data-i18n="privacy.intro">e¹ is designed to help you capture words and moments you want to keep, highlight the part that matters, and save it as a bookmark on your iPhone.</p>
+        <span data-i18n="privacy.updated">Last updated: July 15, 2026</span>
       </div>
     </header>
 
     <article class="legal-document">
       <section class="legal-section legal-summary">
-        <h2>Summary</h2>
+        <h2 data-i18n="privacy.summary.title">Summary</h2>
         <div class="legal-copy">
           <ul>
-            <li>e¹ does not require an account.</li>
-            <li>e¹ does not upload your screenshots, photos, OCR text, bookmarks, or user-entered content to our servers.</li>
-            <li>Text recognition is performed on your device using Apple's on-device Vision OCR.</li>
-            <li>The first TestFlight version does not use iCloud or CloudKit sync.</li>
-            <li>Diagnostic logs are stored on your device and are only sent to us if you choose to email them.</li>
-            <li>Diagnostic logs are designed not to include screenshots, photos, OCR text, bookmark text, search queries, or user-entered content.</li>
+            <li data-i18n="privacy.summary.account">e¹ does not require an account.</li>
+            <li data-i18n="privacy.summary.upload">e¹ does not upload your screenshots, photos, OCR text, bookmarks, or user-entered content to our servers.</li>
+            <li data-i18n="privacy.summary.ocr">Text recognition is performed on your device using Apple's on-device Vision OCR.</li>
+            <li data-i18n="privacy.summary.icloud">The first TestFlight version does not use iCloud or CloudKit sync.</li>
+            <li data-i18n="privacy.summary.logs">Diagnostic logs are stored on your device and are only sent to us if you choose to email them.</li>
+            <li data-i18n="privacy.summary.logContent">Diagnostic logs are designed not to include screenshots, photos, OCR text, bookmark text, search queries, or user-entered content.</li>
           </ul>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Information Processed on Your Device</h2>
+        <h2 data-i18n="privacy.device.title">Information Processed on Your Device</h2>
         <div class="legal-copy">
-          <p>e¹ may process the following information locally on your device:</p>
+          <p data-i18n="privacy.device.intro">e¹ may process the following information locally on your device:</p>
           <ul>
-            <li>Screenshots or photos you choose to capture or open in e¹</li>
-            <li>The highlighted area you select</li>
-            <li>Text recognized from the highlighted area</li>
-            <li>Bookmark text and generated bookmark images</li>
-            <li>Local app settings, such as text recognition language preferences</li>
-            <li>Current Apple Music playback status and artwork, if you grant Apple Music access</li>
+            <li data-i18n="privacy.device.item1">Screenshots or photos you choose to capture or open in e¹</li>
+            <li data-i18n="privacy.device.item2">The highlighted area you select</li>
+            <li data-i18n="privacy.device.item3">Text recognized from the highlighted area</li>
+            <li data-i18n="privacy.device.item4">Bookmark text and generated bookmark images</li>
+            <li data-i18n="privacy.device.item5">Local app settings, such as text recognition language preferences</li>
+            <li data-i18n="privacy.device.item6">Current Apple Music playback status and artwork, if you grant Apple Music access</li>
           </ul>
-          <p>This information is used to provide e¹'s core features. It is not uploaded to our servers.</p>
+          <p data-i18n="privacy.device.outro">This information is used to provide e¹'s core features. It is not uploaded to our servers.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Screenshots, Photos, and OCR</h2>
+        <h2 data-i18n="privacy.ocr.title">Screenshots, Photos, and OCR</h2>
         <div class="legal-copy">
-          <p>e¹ uses on-device OCR to recognize text from the area you highlight.</p>
-          <p>The original screenshot or photo is used temporarily during the current editing session. After a bookmark is successfully generated and saved, the temporary source image is intended to be discarded. e¹ stores the final bookmark data and generated bookmark image, not the original screenshot or photo.</p>
+          <p data-i18n="privacy.ocr.p1">e¹ uses on-device OCR to recognize text from the area you highlight.</p>
+          <p data-i18n="privacy.ocr.p2">The original screenshot or photo is used temporarily during the current editing session. After a bookmark is successfully generated and saved, the temporary source image is intended to be discarded. e¹ stores the final bookmark data and generated bookmark image, not the original screenshot or photo.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Camera</h2>
+        <h2 data-i18n="privacy.camera.title">Camera</h2>
         <div class="legal-copy">
-          <p>If you use e¹'s built-in camera, the app requests camera access so you can capture a photo and highlight text from it.</p>
+          <p data-i18n="privacy.camera.p1">If you use e¹'s built-in camera, the app requests camera access so you can capture a photo and highlight text from it.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Photos and Saving Bookmark Images</h2>
+        <h2 data-i18n="privacy.photos.title">Photos and Saving Bookmark Images</h2>
         <div class="legal-copy">
-          <p>When you choose a photo for the canvas, e¹ uses Apple's system photo picker. You grant access only to the photo you select, and e¹ does not request access to your full photo library.</p>
-          <p>When you choose to save or share a generated bookmark image, e¹ uses the iOS system share sheet. If you select Save Image, iOS handles saving the image to your photo library.</p>
+          <p data-i18n="privacy.photos.p1">When you choose a photo for the canvas, e¹ uses Apple's system photo picker. You grant access only to the photo you select, and e¹ does not request access to your full photo library.</p>
+          <p data-i18n="privacy.photos.p2">When you choose to save or share a generated bookmark image, e¹ uses the iOS system share sheet. If you select Save Image, iOS handles saving the image to your photo library.</p>
         </div>
       </section>
 
       <section class="legal-section">
         <h2>Apple Music</h2>
         <div class="legal-copy">
-          <p>If you grant Apple Music access, e¹ uses the permission to display your current playback status and artwork inside the app.</p>
-          <p>e¹ may display Apple Music playback information inside the app, such as playback status, progress, song title, artist, album information, and album artwork.</p>
-          <p>e¹ does not display lyrics in the first TestFlight version.</p>
-          <p>e¹ does not upload your Apple Music listening activity to our servers. If e¹ loads artwork through Apple's iTunes services, that request is handled by Apple's services.</p>
-          <p>When artwork is loaded through Apple's iTunes services, e¹ may send song, artist, or album search information to Apple's iTunes services to find the relevant artwork.</p>
+          <p data-i18n="privacy.music.p1">If you grant Apple Music access, e¹ uses the permission to display your current playback status and artwork inside the app.</p>
+          <p data-i18n="privacy.music.p2">e¹ may display Apple Music playback information inside the app, such as playback status, progress, song title, artist, album information, and album artwork.</p>
+          <p data-i18n="privacy.music.p3">e¹ does not display lyrics in the first TestFlight version.</p>
+          <p data-i18n="privacy.music.p4">e¹ does not upload your Apple Music listening activity to our servers. If e¹ loads artwork through Apple's iTunes services, that request is handled by Apple's services.</p>
+          <p data-i18n="privacy.music.p5">When artwork is loaded through Apple's iTunes services, e¹ may send song, artist, or album search information to Apple's iTunes services to find the relevant artwork.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Diagnostic Logs</h2>
+        <h2 data-i18n="privacy.logs.title">Diagnostic Logs</h2>
         <div class="legal-copy">
-          <p>e¹ may store diagnostic logs on your device to help troubleshoot crashes and bugs.</p>
-          <p>These logs are designed to include technical information such as app version, iOS version, device model, error codes, crash or failure time, and non-content workflow status.</p>
-          <p>Diagnostic logs are designed not to include original screenshots or photos, cropped OCR images, OCR text, bookmark text, search queries, or user-entered content.</p>
-          <p>Logs are not sent automatically. You may choose to send logs to us by email for support.</p>
+          <p data-i18n="privacy.logs.p1">e¹ may store diagnostic logs on your device to help troubleshoot crashes and bugs.</p>
+          <p data-i18n="privacy.logs.p2">These logs are designed to include technical information such as app version, iOS version, device model, error codes, crash or failure time, and non-content workflow status.</p>
+          <p data-i18n="privacy.logs.p3">Diagnostic logs are designed not to include original screenshots or photos, cropped OCR images, OCR text, bookmark text, search queries, or user-entered content.</p>
+          <p data-i18n="privacy.logs.p4">Logs are not sent automatically. You may choose to send logs to us by email for support.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Email Support</h2>
+        <h2 data-i18n="privacy.email.title">Email Support</h2>
         <div class="legal-copy">
-          <p>If you contact us by email, we will receive your email address and any information you choose to include in the message. We use this information only to respond to your request and improve e¹.</p>
-          <p>Support email: <a href="mailto:thewoolabo@gmail.com">thewoolabo@gmail.com</a></p>
+          <p data-i18n="privacy.email.p1">If you contact us by email, we will receive your email address and any information you choose to include in the message. We use this information only to respond to your request and improve e¹.</p>
+          <p><span data-i18n="privacy.email.label">Support email:</span> <a href="mailto:thewoolabo@gmail.com">thewoolabo@gmail.com</a></p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>iCloud and CloudKit</h2>
+        <h2 data-i18n="privacy.icloud.title">iCloud and CloudKit</h2>
         <div class="legal-copy">
-          <p>The first TestFlight version of e¹ does not use iCloud or CloudKit sync.</p>
-          <p>If we add iCloud or CloudKit sync in a future version, this privacy policy will be updated before that feature is released.</p>
+          <p data-i18n="privacy.icloud.p1">The first TestFlight version of e¹ does not use iCloud or CloudKit sync.</p>
+          <p data-i18n="privacy.icloud.p2">If we add iCloud or CloudKit sync in a future version, this privacy policy will be updated before that feature is released.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Analytics and Third-Party SDKs</h2>
+        <h2 data-i18n="privacy.analytics.title">Analytics and Third-Party SDKs</h2>
         <div class="legal-copy">
-          <p>The first TestFlight version of e¹ does not use third-party analytics SDKs.</p>
-          <p>If this changes in the future, this privacy policy and App Store privacy information will be updated.</p>
+          <p data-i18n="privacy.analytics.p1">The first TestFlight version of e¹ does not use third-party analytics SDKs.</p>
+          <p data-i18n="privacy.analytics.p2">If this changes in the future, this privacy policy and App Store privacy information will be updated.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Children's Privacy</h2>
+        <h2 data-i18n="privacy.children.title">Children's Privacy</h2>
         <div class="legal-copy">
-          <p>e¹ is not directed to children and does not knowingly collect personal information from children.</p>
+          <p data-i18n="privacy.children.p1">e¹ is not directed to children and does not knowingly collect personal information from children.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Changes to This Policy</h2>
+        <h2 data-i18n="privacy.changes.title">Changes to This Policy</h2>
         <div class="legal-copy">
-          <p>We may update this privacy policy as e¹ changes. The updated policy will be posted at the same privacy policy URL with a new "Last updated" date.</p>
+          <p data-i18n="privacy.changes.p1">We may update this privacy policy as e¹ changes. The updated policy will be posted at the same privacy policy URL with a new "Last updated" date.</p>
         </div>
       </section>
 
       <section class="legal-section">
-        <h2>Contact</h2>
+        <h2 data-i18n="privacy.contact.title">Contact</h2>
         <div class="legal-copy">
-          <p>If you have questions about this privacy policy, contact us at <a href="mailto:thewoolabo@gmail.com">thewoolabo@gmail.com</a>.</p>
+          <p><span data-i18n="privacy.contact.p1">If you have questions about this privacy policy, contact us at</span> <a href="mailto:thewoolabo@gmail.com">thewoolabo@gmail.com</a>.</p>
         </div>
       </section>
     </article>
   </main>
 
   <footer class="site-footer">
-    <span>e¹ by Woolabo</span>
-    <a href="/support/">Support</a>
+    <span class="footer-brand"><span class="brand-symbol footer-brand-symbol" aria-hidden="true"></span><span data-i18n="footer.by">by Woolabo</span></span>
+    <a href="/support/" data-i18n="nav.support">Support</a>
   </footer>
 </body>
 </html>

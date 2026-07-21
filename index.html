@@ -10,32 +10,33 @@
   <link rel="apple-touch-icon" href="/assets/app-icon-current.png">
   <link rel="preload" href="/assets/fonts/JuliusSansOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/assets/app-home.png" as="image">
-  <link rel="stylesheet" href="/styles.css?v=20260722-1">
+  <link rel="stylesheet" href="/styles.css?v=20260722-2">
   <script src="/site-config.js" defer></script>
+  <script src="/i18n.js" defer></script>
 </head>
 <body class="home-page">
   <header class="site-header">
     <a class="brand-mark" href="/" aria-label="e¹ home" aria-current="page">
       <span class="brand-symbol" aria-hidden="true"></span>
     </a>
-    <nav class="site-nav" aria-label="Primary navigation">
-      <a href="/shortcuts/">Shortcuts</a>
-      <a href="/privacy-policy/">Privacy</a>
-      <a href="/support/">Support</a>
+    <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="nav.label">
+      <a href="/shortcuts/" data-i18n="nav.shortcuts">Shortcuts</a>
+      <a href="/privacy-policy/" data-i18n="nav.privacy">Privacy</a>
+      <a href="/support/" data-i18n="nav.support">Support</a>
       <a class="nav-external" href="https://github.com/woolabo" rel="noreferrer">GitHub</a>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="切换至中文">ZH</button>
     </nav>
   </header>
 
   <main class="home-main">
     <section class="home-hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title">Keep what<br>catches you.</h1>
-        <p class="hero-description">Capture a line from a screen or the world. Turn it into a private bookmark worth returning to.</p>
-        <a class="primary-cta" href="/shortcuts/">Get the Shortcut</a>
+        <h1 id="hero-title" data-i18n-html="home.title">Keep what<br>catches you.</h1>
+        <p class="hero-description" data-i18n="home.description">Capture a line from a screen or the world. Turn it into a private bookmark worth returning to.</p>
+        <a class="primary-cta" href="/shortcuts/" data-i18n="home.cta">Get the Shortcut</a>
       </div>
 
       <figure class="device-stage" aria-label="e¹ app on iPhone">
-        <div class="device-color-block" aria-hidden="true"></div>
         <div class="iphone" aria-hidden="true">
           <img class="iphone-hardware" src="/assets/apple/iphone-17-pro-silver-portrait.png" alt="" draggable="false">
           <div class="iphone-screen-mask">
@@ -47,46 +48,46 @@
 
     <section class="principle-strip" aria-label="Product principles">
       <div class="principle">
-        <span class="principle-label">On device</span>
-        <span class="principle-value">Text recognition stays on your iPhone.</span>
+        <span class="principle-label" data-i18n="home.deviceLabel">On device</span>
+        <span class="principle-value" data-i18n="home.deviceValue">Text recognition stays on your iPhone.</span>
       </div>
       <div class="principle">
-        <span class="principle-label">Local first</span>
-        <span class="principle-value">No account is required.</span>
+        <span class="principle-label" data-i18n="home.localLabel">Local first</span>
+        <span class="principle-value" data-i18n="home.localValue">No account is required.</span>
       </div>
       <div class="principle">
-        <span class="principle-label">Made to return</span>
-        <span class="principle-value">Words become visual bookmarks.</span>
+        <span class="principle-label" data-i18n="home.returnLabel">Made to return</span>
+        <span class="principle-value" data-i18n="home.returnValue">Words become visual bookmarks.</span>
       </div>
     </section>
 
     <nav class="home-link-grid" aria-label="Explore e¹">
       <a class="home-link home-link-primary" href="/shortcuts/">
         <span class="home-link-index">01</span>
-        <strong>Get the Shortcut</strong>
-        <span>Choose your language</span>
+        <strong data-i18n="home.shortcutTitle">Get the Shortcut</strong>
+        <span data-i18n="home.shortcutNote">Choose your language</span>
       </a>
       <a class="home-link" href="/privacy-policy/">
         <span class="home-link-index">02</span>
-        <strong>Privacy</strong>
-        <span>Read how data is handled</span>
+        <strong data-i18n="home.privacyTitle">Privacy</strong>
+        <span data-i18n="home.privacyNote">Read how data is handled</span>
       </a>
       <a class="home-link" href="/support/">
         <span class="home-link-index">03</span>
-        <strong>Support</strong>
-        <span>Contact the developer</span>
+        <strong data-i18n="home.supportTitle">Support</strong>
+        <span data-i18n="home.supportNote">Contact the developer</span>
       </a>
       <a class="home-link" href="https://github.com/woolabo" rel="noreferrer">
         <span class="home-link-index">04</span>
         <strong>Woolabo</strong>
-        <span>Visit GitHub</span>
+        <span data-i18n="home.githubNote">Visit GitHub</span>
       </a>
     </nav>
   </main>
 
   <footer class="site-footer">
-    <span>e¹ by Woolabo</span>
-    <span>iPhone is a trademark of Apple Inc.</span>
+    <span class="footer-brand"><span class="brand-symbol footer-brand-symbol" aria-hidden="true"></span><span data-i18n="footer.by">by Woolabo</span></span>
+    <span data-i18n="footer.trademark">iPhone is a trademark of Apple Inc.</span>
   </footer>
 </body>
 </html>
