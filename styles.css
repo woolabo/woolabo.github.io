@@ -625,6 +625,10 @@ img {
   padding: clamp(72px, 9vw, 140px) 0;
 }
 
+.support-hero {
+  row-gap: clamp(32px, 4vw, 56px);
+}
+
 .document-hero h1,
 .support-hero h1 {
   max-width: 1000px;
@@ -634,14 +638,14 @@ img {
   line-height: 0.9;
 }
 
-.document-intro,
-.support-hero > p {
+.document-intro {
   max-width: 720px;
   margin: clamp(32px, 4vw, 56px) 0 0;
 }
 
 .document-intro p,
 .support-hero > p {
+  max-width: 720px;
   margin: 0;
   color: var(--muted);
   font-size: clamp(18px, 1.6vw, 23px);
@@ -1055,9 +1059,12 @@ img {
     font-size: clamp(60px, 17vw, 78px);
   }
 
-  .document-intro,
-  .support-hero > p {
+  .document-intro {
     margin-top: 30px;
+  }
+
+  .support-hero {
+    row-gap: 30px;
   }
 
   .document-intro p,
