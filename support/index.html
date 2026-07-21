@@ -3,40 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2f2f2">
+  <meta name="theme-color" content="#101011">
   <meta name="description" content="Support for the e¹ iPhone app.">
   <title>e¹ Support</title>
   <link rel="icon" type="image/png" sizes="120x120" href="/assets/app-icon-current.png">
   <link rel="apple-touch-icon" href="/assets/app-icon-current.png">
-  <link rel="stylesheet" href="/styles.css?v=20260711-3">
+  <link rel="preload" href="/assets/fonts/JuliusSansOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/styles.css?v=20260722-1">
 </head>
-<body class="legal-page">
+<body class="support-page">
   <header class="site-header">
-    <a class="brand-mark" href="/" aria-label="e¹ home">e<sup>1</sup></a>
+    <a class="brand-mark" href="/" aria-label="e¹ home">
+      <span class="brand-symbol" aria-hidden="true"></span>
+    </a>
     <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/shortcuts/">Shortcuts</a>
       <a href="/privacy-policy/">Privacy</a>
       <a href="/support/" aria-current="page">Support</a>
-      <a href="https://github.com/woolabo" rel="noreferrer">GitHub</a>
+      <a class="nav-external" href="https://github.com/woolabo" rel="noreferrer">GitHub</a>
     </nav>
   </header>
 
-  <main class="document-layout">
-    <article class="document">
-      <h1>e¹ Support</h1>
-      <p class="updated">Support for the e¹ TestFlight release.</p>
-      <p class="lede">Tell us what happened and include only the information you are comfortable sharing.</p>
-      <p>Please include your iPhone model, iOS version, e¹ app version, and a short description of what happened. Do not include screenshots or private content unless you intentionally choose to share them.</p>
-      <div class="support-actions">
-        <a href="mailto:thewoolabo@gmail.com">
-          <span>Email support</span>
-          <span aria-hidden="true">&nearr;</span>
-        </a>
-        <a href="/privacy-policy/">
-          <span>Privacy Policy</span>
-          <span aria-hidden="true">&rarr;</span>
-        </a>
+  <main class="support-main">
+    <section class="support-hero" aria-labelledby="support-title">
+      <h1 id="support-title">Support.</h1>
+      <p>Tell us what happened. Share only the information you are comfortable sending.</p>
+    </section>
+
+    <section class="support-contact" aria-label="Contact support">
+      <div class="support-guidance">
+        <span class="section-label">What to include</span>
+        <p>Your iPhone model, iOS version, e¹ app version, and a short description of what happened.</p>
+        <p class="support-privacy-note">Do not include screenshots or private content unless you intentionally choose to share them.</p>
       </div>
-    </article>
+      <div class="support-channel">
+        <span class="section-label">Email</span>
+        <a class="support-email" href="mailto:thewoolabo@gmail.com">thewoolabo@gmail.com</a>
+        <a class="primary-cta" href="mailto:thewoolabo@gmail.com">Email support</a>
+      </div>
+    </section>
+
+    <a class="support-policy-link" href="/privacy-policy/">
+      <span>Read the Privacy Policy</span>
+      <span>How e¹ handles your data</span>
+    </a>
   </main>
+
+  <footer class="site-footer">
+    <span>e¹ by Woolabo</span>
+    <span>TestFlight support</span>
+  </footer>
 </body>
 </html>
